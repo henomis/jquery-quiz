@@ -1,0 +1,30 @@
+form {
+  border: 1px dashed black;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+input[type=text] {        
+        padding:5px;
+        border: 0px;
+        border-bottom: 1px solid #aaa;
+        
+}
+input[type=button] {
+  position: relative;
+  width: 100px;
+  margin-left: 100%;
+  right: 100px;
+  
+}
+
+.answ_error {
+        background-color: red;
+        font-weight: bold;
+        color: white;
+}
+.answ_ok {
+        background-color: green;
+        font-weight: bold;
+        color: white;
+}

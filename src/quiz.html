@@ -2,22 +2,28 @@
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/jquery-quiz.js"></script>
+<script src="js/jquery-quiz-plugin.js"></script>
+<script>
+$(document).ready(function() {
+	$('#form1').quizify({help: true});
+	$('#form2').quizify({help: false});
+});
 
+</script>
 <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
 <meta charset=utf-8 />
 <title>JS Bin</title>
 </head>
 <body>
-  <form class="quiz">
+  <form id="form1" class="quiz">
 The sky is <input type="text" answ="blue"/>.
     The pen is <input type="text" answ="on" help="true"/> the table.<br />
     Yes I, <input type="text" answ="am"/>.<br />
 <input type="button" class="subm" value="Verify"/>
 </form>
   <br />  
-  <form class="quiz">
-My <input type="text" answ="name"/> is Simone.
+  <form class="quiz" id="form2">
+My <input type="text" answ="name" help="true"/> is Simone.
     How old <input type="text" answ="are"/> you?<br />
     Yes I <input type="text" answ="am"/> a developer.<br />
 <input type="button" class="subm" value="Verify"/>
